@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  UnsplashPhotoPicker
+
+  Created by Bichon, Nicolas on 2018-11-04.
+  Copyright © 2018 Unsplash. All rights reserved.
+*/
+
+"search.placeholder"= "사진 검색";
+
+"error.noResults.title"= "결과 없음";
+"error.noResults.description"= "검색을 업데이트하고 다시 시도하십시오.";
+"error.noInternetConnection.title"= "인터넷 연결 없음";
+"error.noInternetConnection.description"= "Unsplash에 접근하려면 Wi-Fi 또는 셀룰러 데이터 네트워크에 연결해야합니다.";
+"error.serverError.title"= "서버 오류";
+"error.serverError.description"= "문제가 있습니다. 다시 시도하십시오.";

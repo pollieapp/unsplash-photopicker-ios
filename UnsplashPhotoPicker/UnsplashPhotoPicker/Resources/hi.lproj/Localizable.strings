@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  UnsplashPhotoPicker
+
+  Created by Bichon, Nicolas on 2018-11-04.
+  Copyright © 2018 Unsplash. All rights reserved.
+*/
+
+"search.placeholder" = "फ़ोटो खोजें";
+
+"error.noResults.title" = "कोई परिणाम नहीं";
+"error.noResults.description" = "कृपया अपनी खोज को अपडेट करें और फिर से प्रयास करें।";
+"error.noInternetConnection.title" = "कोई इंटरनेट कनेक्शन नहीं";
+"error.noInternetConnection.description" = "Unsplash तक पहुंचने के लिए आपको वाई-फाई या सेलुलर डेटा नेटवर्क से कनेक्ट होना चाहिए।";
+"error.serverError.title" = "सर्वर त्रुटि";
+"error.serverError.description" = "कुछ गलत है। कृपया पुनः प्रयास करें।";

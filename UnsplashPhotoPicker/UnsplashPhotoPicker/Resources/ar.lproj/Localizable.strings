@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  UnsplashPhotoPicker
+
+  Created by Bichon, Nicolas on 2018-11-04.
+  Copyright © 2018 Unsplash. All rights reserved.
+*/
+
+"search.placeholder" = "البحث في الصور";
+
+"error.noResults.title" = "لا نتائج";
+"error.noResults.description" = "يرجى تحديث بحثك وحاول مرة أخرى.";
+"error.noInternetConnection.title" = "لا يوجد اتصال بالإنترنت";
+"error.noInternetConnection.description" = "يجب عليك الاتصال بشبكة Wi-Fi أو شبكة بيانات خلوية للوصول إلى Unsplash.";
+"error.serverError.title" = "خطأ في الخادم";
+"error.serverError.description" = "هناك خطأ ما. يرجى المحاولة مرة أخرى.";

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  UnsplashPhotoPicker
+
+  Created by Bichon, Nicolas on 2018-11-04.
+  Copyright © 2018 Unsplash. All rights reserved.
+*/
+
+"search.placeholder" = "Søg efter fotos";
+
+"error.noResults.title" = "Ingen resultater";
+"error.noResults.description" = "Opdater din søgning, og prøv igen.";
+"error.noInternetConnection.title" = "Ingen internetforbindelse";
+"error.noInternetConnection.description" = "Du skal oprette forbindelse til et Wi-Fi- eller mobildatanetværk for at få adgang til Unsplash.";
+"error.serverError.title" = "Serverfejl";
+"error.serverError.description" = "Der er noget galt. Prøv igen.";
