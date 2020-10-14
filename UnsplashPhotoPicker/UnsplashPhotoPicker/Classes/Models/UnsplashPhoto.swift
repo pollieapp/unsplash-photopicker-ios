@@ -37,6 +37,7 @@ public struct UnsplashPhoto: Codable {
     public let likesCount: Int
     public let downloadsCount: Int?
     public let viewsCount: Int?
+    public let description: String?
 
     private enum CodingKeys: String, CodingKey {
         case identifier = "id"
@@ -50,6 +51,7 @@ public struct UnsplashPhoto: Codable {
         case likesCount = "likes"
         case downloadsCount = "downloads"
         case viewsCount = "views"
+        case description
     }
 
     public init(from decoder: Decoder) throws {
@@ -65,6 +67,7 @@ public struct UnsplashPhoto: Codable {
         likesCount = try container.decode(Int.self, forKey: .likesCount)
         downloadsCount = try? container.decode(Int.self, forKey: .downloadsCount)
         viewsCount = try? container.decode(Int.self, forKey: .viewsCount)
+        description = try? container.decode(String.self, forKey: .description)
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -80,6 +83,7 @@ public struct UnsplashPhoto: Codable {
         try container.encode(likesCount, forKey: .likesCount)
         try? container.encode(downloadsCount, forKey: .downloadsCount)
         try? container.encode(viewsCount, forKey: .viewsCount)
+        try? container.encode(description, forKey: .description)
     }
 
 }
