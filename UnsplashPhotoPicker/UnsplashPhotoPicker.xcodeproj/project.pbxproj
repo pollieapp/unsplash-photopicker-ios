@@ -11,7 +11,6 @@
 		09F278B02193583A000A26A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F278AF2193583A000A26A4 /* Assets.xcassets */; };
 		09F278B22193589E000A26A4 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F278B12193589E000A26A4 /* CheckmarkView.swift */; };
 		231D127C218FAEB3002C5750 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 231D127B218FAEB3002C5750 /* Localizable.stringsdict */; };
-		231D127E218FB1DB002C5750 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 231D127D218FB1DB002C5750 /* Localizable.strings */; };
 		231D1280218FB3D7002C5750 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D127F218FB3D7002C5750 /* String+Localization.swift */; };
 		231D12E9218FCD0E002C5750 /* UnsplashPhotoPickerPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D12E8218FCD0E002C5750 /* UnsplashPhotoPickerPreviewViewController.swift */; };
 		2333E0EC21757C52000B1900 /* UnsplashPhotoPickerViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333E0EB21757C52000B1900 /* UnsplashPhotoPickerViewController+UICollectionView.swift */; };
@@ -49,6 +48,7 @@
 		23B683C0216BF83200CAA546 /* UnsplashPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B683BE216BF83200CAA546 /* UnsplashPhotoPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23C24A71217D3BBC00C03E7B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C24A70217D3BBC00C03E7B /* EmptyView.swift */; };
 		23C288F421BF450800D97A3B /* UnsplashSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C288F321BF450800D97A3B /* UnsplashSearchController.swift */; };
+		42BA27A0253733C500CF55BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42BA27A2253733C500CF55BB /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,6 @@
 		09F278AF2193583A000A26A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09F278B12193589E000A26A4 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		231D127B218FAEB3002C5750 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
-		231D127D218FB1DB002C5750 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		231D127F218FB3D7002C5750 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		231D12E8218FCD0E002C5750 /* UnsplashPhotoPickerPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoPickerPreviewViewController.swift; sourceTree = "<group>"; };
 		2333E0EB21757C52000B1900 /* UnsplashPhotoPickerViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnsplashPhotoPickerViewController+UICollectionView.swift"; sourceTree = "<group>"; };
@@ -96,6 +95,8 @@
 		23B683BF216BF83200CAA546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23C24A70217D3BBC00C03E7B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		23C288F321BF450800D97A3B /* UnsplashSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashSearchController.swift; sourceTree = "<group>"; };
+		42BA27A1253733C500CF55BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		42BA27A4253733D900CF55BB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +130,7 @@
 			children = (
 				09F278AF2193583A000A26A4 /* Assets.xcassets */,
 				231D127B218FAEB3002C5750 /* Localizable.stringsdict */,
-				231D127D218FB1DB002C5750 /* Localizable.strings */,
+				42BA27A2253733C500CF55BB /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -311,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 23B683B1216BF83200CAA546;
 			productRefGroup = 23B683BC216BF83200CAA546 /* Products */;
@@ -328,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A0D238216D901400BEAE05 /* PhotoView.xib in Resources */,
-				231D127E218FB1DB002C5750 /* Localizable.strings in Resources */,
+				42BA27A0253733C500CF55BB /* Localizable.strings in Resources */,
 				09F278B02193583A000A26A4 /* Assets.xcassets in Resources */,
 				231D127C218FAEB3002C5750 /* Localizable.stringsdict in Resources */,
 			);
@@ -404,11 +406,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		42BA27A2253733C500CF55BB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42BA27A1253733C500CF55BB /* en */,
+				42BA27A4253733D900CF55BB /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		23B683C1216BF83200CAA546 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -473,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
