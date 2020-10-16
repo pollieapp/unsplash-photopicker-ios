@@ -91,7 +91,8 @@ class UnsplashPhotoPickerViewController: UIViewController {
         return collectionView.indexPathsForSelectedItems?.count ?? 0
     }
 
-    private let editorialDataSource = PhotosDataSourceFactory.collection(identifier: Configuration.shared.editorialCollectionId).dataSource
+//    private let editorialDataSource = PhotosDataSourceFactory.collection(identifier: Configuration.shared.editorialCollectionId).dataSource
+    private let editorialDataSource = PhotosDataSourceFactory.list.dataSource
 
     private var previewingContext: UIViewControllerPreviewing?
     private var searchText: String?

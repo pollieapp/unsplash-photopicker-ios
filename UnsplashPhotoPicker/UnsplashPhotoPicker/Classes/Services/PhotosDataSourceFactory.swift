@@ -9,6 +9,7 @@
 import UIKit
 
 enum PhotosDataSourceFactory: PagedDataSourceFactory {
+    case list
     case search(query: String)
     case collection(identifier: String)
 
@@ -18,6 +19,8 @@ enum PhotosDataSourceFactory: PagedDataSourceFactory {
 
     func initialCursor() -> UnsplashPagedRequest.Cursor {
         switch self {
+        case .list:
+            return ListPhotosRequest.cursor(page: 1, perPage: 30)
         case .search(let query):
             return SearchPhotosRequest.cursor(with: query, page: 1, perPage: 30)
         case .collection(let identifier):
@@ -28,6 +31,8 @@ enum PhotosDataSourceFactory: PagedDataSourceFactory {
 
     func request(with cursor: UnsplashPagedRequest.Cursor) -> UnsplashPagedRequest {
         switch self {
+        case .list:
+            return ListPhotosRequest(page: cursor.page, perPage: cursor.perPage)
         case .search(let query):
             return SearchPhotosRequest(with: query, page: cursor.page, perPage: cursor.perPage)
         case .collection(let identifier):
