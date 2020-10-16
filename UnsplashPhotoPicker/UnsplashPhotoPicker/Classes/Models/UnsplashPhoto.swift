@@ -31,6 +31,7 @@ public struct UnsplashPhoto: Codable {
     public let width: Int
     public let color: UIColor?
     public let exif: UnsplashPhotoExif?
+    public let tags: [UnsplashPhotoTag]?
     public let user: UnsplashUser
     public let urls: [URLKind: URL]
     public let links: [LinkKind: URL]
@@ -45,6 +46,7 @@ public struct UnsplashPhoto: Codable {
         case width
         case color
         case exif
+        case tags
         case user
         case urls
         case links
@@ -61,6 +63,7 @@ public struct UnsplashPhoto: Codable {
         width = try container.decode(Int.self, forKey: .width)
         color = try container.decode(UIColor.self, forKey: .color)
         exif = try? container.decode(UnsplashPhotoExif.self, forKey: .exif)
+        tags = try? container.decode([UnsplashPhotoTag].self, forKey: .tags)
         user = try container.decode(UnsplashUser.self, forKey: .user)
         urls = try container.decode([URLKind: URL].self, forKey: .urls)
         links = try container.decode([LinkKind: URL].self, forKey: .links)
@@ -77,6 +80,7 @@ public struct UnsplashPhoto: Codable {
         try container.encode(width, forKey: .width)
         try? container.encode(color?.hexString, forKey: .color)
         try? container.encode(exif, forKey: .exif)
+        try? container.encode(tags, forKey: .tags)
         try container.encode(user, forKey: .user)
         try container.encode(urls.convert({ ($0.key.rawValue, $0.value.absoluteString) }), forKey: .urls)
         try container.encode(links.convert({ ($0.key.rawValue, $0.value.absoluteString) }), forKey: .links)
