@@ -35,6 +35,9 @@ public struct UnsplashPhotoPickerConfiguration {
     /// The default disk capacity used by the cache.
     public static let defaultDiskCapacity: Int = ImageCache.diskCapacity
 
+    /// Supported ISO 639-1 language code of the query. Default: "en"
+    public var lang: String = "en"
+
     /// The Unsplash API url.
     let apiURL = "https://api.unsplash.com/"
 
@@ -56,13 +59,15 @@ public struct UnsplashPhotoPickerConfiguration {
                 query: String? = nil,
                 allowsMultipleSelection: Bool = false,
                 memoryCapacity: Int = defaultMemoryCapacity,
-                diskCapacity: Int = defaultDiskCapacity) {
+                diskCapacity: Int = defaultDiskCapacity,
+                lang: String = "en") {
         self.accessKey = accessKey
         self.secretKey = secretKey
         self.query = query
         self.allowsMultipleSelection = allowsMultipleSelection
         self.memoryCapacity = memoryCapacity
         self.diskCapacity = diskCapacity
+        self.lang = lang
     }
 
     init() {}
