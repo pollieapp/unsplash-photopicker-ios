@@ -172,8 +172,9 @@ class UnsplashPhotoPickerViewController: UIViewController {
 
     private func setupSearchController() {
         let trimmedQuery = Configuration.shared.query?.trimmingCharacters(in: .whitespacesAndNewlines)
-        if let query = trimmedQuery, query.isEmpty == false { return }
+//        if let query = trimmedQuery, query.isEmpty == false { return }
 
+        searchController.searchBar.text = trimmedQuery
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
